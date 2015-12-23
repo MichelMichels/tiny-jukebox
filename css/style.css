@@ -1,0 +1,101 @@
+/*
+ * CSS file of music server
+ *
+ * @author Michel Michels
+ * @date 23/12/2015
+ *
+**/
+
+/*
+ * Reset
+**/
+
+*, html {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*
+ * Main wrapper
+**/
+
+main {
+	padding: 0 20px;
+}
+
+/*
+ * Artist CSS
+**/
+
+main > ul > .dir {
+	font-size: 3rem;
+	font-weight: bold;
+
+	margin-top: 20px;
+}
+
+/*
+ * Album title CSS
+**/
+
+main > ul > li > ul > .dir {
+	font-size: 2rem;
+}
+
+/*
+ * Album songs CSS
+**/
+
+main > ul > li > ul {
+	padding: 15px;
+	border-radius: 5px;
+	background-color: pink;
+}
+
+
+/*
+ * Song CSS
+**/
+
+main .file:nth-child(odd) {
+	background-color: rgba(0,0,0, 0.3);
+}
+
+main .file:nth-child(even) {
+	background-color: rgba(0,0,0, 0.2);
+}
+
+/*
+ * Audio CSS
+**/
+
+
+audio {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	left: 0; right: 0;
+}
+
+audio::-webkit-media-controls-timeline {
+	max-width: 100%;
+}
+
+audio::-webkit-media-controls-enclosure {
+	height: 100%;
+	max-width: 100%;
+
+}
+
+audio::-webkit-media-controls-timeline {
+	max-width: 100%;
+}
+
+audio::-webkit-media-controls-panel {
+	height: 100%;
+	max-width: 100%;
+	border-radius: initial;
+	background-color: #000;
+}
